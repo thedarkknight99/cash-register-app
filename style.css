@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c4b5fd;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 42rem;
+}
+
+body {
+    text-align: center;
+}
+
+.description {
+    font-size: 20px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid #5b21b6;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+td,
+th {
+    width: 10%;
+}
+
+caption {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+label {
+    font-weight: 600;
+    font-size: large;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+input {
+    width: 30vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #5b21b6;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    width: 23%;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: #6d28d9;
+    border: 1px solid #5b21b6;
+    color: white;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: white;
+    color: #5b21b6;
+    font-weight: 600;
+}
+
+
+
+/* .sub-container {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+} */
