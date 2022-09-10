@@ -10,7 +10,7 @@ const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 function validateBillAmount() {
     message.style.display = "none"
     if (billAmount.value > 0) {
-        if (cashGiven.value >= billAmount.value) {
+        if (billAmount.value <= cashGiven.value) {
             const amountToReturned = cashGiven.value - billAmount.value;
             message.style.display = "none"
             calculateChange(amountToReturned);
