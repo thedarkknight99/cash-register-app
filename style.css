@@ -22,6 +22,7 @@ table {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    margin-top: 2rem;
 }
 
 table,
@@ -41,6 +42,7 @@ caption {
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: 600;
+    margin-top: 10px;
 }
 
 label {
@@ -92,4 +94,14 @@ button:hover {
     background-color: white;
     color: #5b21b6;
     font-weight: 600;
+}
+
+.totalBillAmount {
+    display: flex;
+    flex-direction: column;
+}
+
+.totalCashGiven {
+    display: flex;
+    flex-direction: column;
 }
