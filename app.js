@@ -9,9 +9,13 @@ const nextBtn = document.querySelector("#next");
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 function validateBillAmount() {
     message.style.display = "none"
-    if (billAmount.value > 0) {
-        if (billAmount.value <= cashGiven.value) {
-            const amountToReturned = cashGiven.value - billAmount.value;
+    //console.log(billAmount.value)
+    //console.log(cashGiven.value)
+    //console.log("clicked")
+    if (Number(billAmount.value) > 0) {
+        if (Number(billAmount.value) <= Number(cashGiven.value)) {
+            //console.log("less")
+            const amountToReturned = Number(cashGiven.value) - Number(billAmount.value);
             message.style.display = "none"
             calculateChange(amountToReturned);
         }
@@ -20,7 +24,9 @@ function validateBillAmount() {
         }
     }
     else {
-        showMessage("Invalid Bill Amount")
+        hideCashGiven()
+        nextBtn.style.display = "flex"
+        showMessage("Invalid Bill Amount");
     }
 }
 function showMessage(text) {
@@ -41,7 +47,7 @@ function showCashDiv() {
     totalCashGiveDiv.style.display = "flex"
 }
 function nextValidate() {
-    if (billAmount.value > 0) {
+    if (Number(billAmount.value) > 0) {
         nextBtn.style.display = "none"
         showCashDiv()
     }
